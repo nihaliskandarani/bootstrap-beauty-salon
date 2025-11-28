@@ -52,7 +52,7 @@
         class="navbar navbar-expand-lg fixed-top navbar-dark "
         style="
           background-color: rgba(255, 255, 255, 0.4);
-          backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px); height: 80px;
         "
       >
         <div class="container">
@@ -80,7 +80,8 @@
           </button>
 
           <div class="navbar navbar-collapse navbar-dark" id="nav">
-            <ul class="navbar-nav mx-auto gap-2">
+            <ul class="navbar-nav mx-auto gap-2 "
+            >
               <li class="nav-item">
                 <a href="#" class="nav-link">Home</a>
               </li>
@@ -106,7 +107,7 @@
                 >
                 <ul
                   class="dropdown-menu"
-                  style="background-color: rgba(255, 255, 255, 0.4)"
+                  style="background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px);"
                 >
                   <li>
                     <a
@@ -152,15 +153,15 @@
               </li>
               <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
             </ul>
-          <div class="d-flex mt-3">
-            <div class="mx-auto order-2 ms-3 mt-1">
-              <button class="btn btn-shine btn-sm" type="button">
+          <div class="d-flex mt-2">
+            <div class="mx-auto order-2 ms-3  fs-2">
+              <button class="btn btn-shine " type="button">
               <i class="fa-brands  fa-facebook-f fs-5 text-light"></i>
             </button>
-            <button class="btn btn-shine btn-sm" type="button">
+            <button class="btn btn-shine " type="button">
               <i class="fa-brands  fa-instagram fs-5 text-light"></i>
             </button>
-            <button class="btn btn-shine btn-sm " type="button">
+            <button class="btn btn-shine  " type="button">
               <i class="fa-brands fa-linkedin-in fs-5 text-light"></i>
             </button> 
           </div>
@@ -168,7 +169,7 @@
 
 
             <div
-          class=" text-center mx-auto bg-transparent ms-lg-3"
+          class=" text-center mx-auto ms-lg-3 mt-1"
           style="
             overflow: hidden;
             
@@ -528,6 +529,173 @@
         </div>
       </div>
     </div>
+
+
+
+    
+
+ <!-- sec 3 services -->
+    <div class="container container3">
+      <div class="row mb-5">
+        <div class="col-md-12 text-center ms-auto mx-auto">
+          <h5
+            class="fs-2 mb-3"
+            style="
+              font-family: var(--bs-font-dancing-script);
+              color: var(--bs-pink);
+            "
+          >
+            Our Services
+          </h5>
+          <h1>Explore Our Services</h1>
+        </div>
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card2">
+            <div class="card-content front face">
+              <img class="img-fluid" src="./images/hair.jpeg" />
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 opacity-75 w-100 my-0"
+                style="
+                  background-color: rgba(255, 255, 255, 1);
+                  color: var(--bs-pink);
+                "
+              >
+                Hair Styling
+              </h1>
+            </div>
+            <div class="back face">
+              <h1 class="sec3-title">Hair Styling</h1>
+              <p class="text-muted">Standard & Bridal</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card3">
+            <div class="card-content front face card-content">
+              <img class="img-fluid" src="./images/make.avif" />
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 opacity-75 w-100 my-0"
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  color: #0e7385;
+                "
+              >
+                Makeup
+              </h1>
+            </div>
+            <div class="back face">
+              <h1 class="sec3-title">Makeup</h1>
+              <p class="text-muted">Standard & Bridal</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card">
+            <div class="front face card-content">
+              <img class="img-fluid" src="./images/massage2.webp" />
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 opacity-75 w-100 my-0"
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  color: var(--bs-pink);
+                "
+              >
+                Massage
+              </h1>
+            </div>
+            <div class="back face">
+              <h1 class="sec3-title">Massage</h1>
+              <p class="text-muted">Session Duration: 45 mins</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card2">
+            <div class="front face card-content">
+              <img class="img-fluid" src="./images/skin.webp" />
+
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 opacity-75 w-100 my-0"
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  color: #0e7385;
+                "
+              >
+                Skin Care
+              </h1>
+            </div>
+
+            <div class="back face">
+              <h1 class="sec3-title">Skin Care</h1>
+              <p class="text-muted">Session Duration: 60 mins</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card3">
+            <div class="front face">
+              <img class="img-fluid" src="./images/manic.webp" />
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 w-100 my-0 opacity-75"
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  color: var(--bs-pink);
+                "
+              >
+                Manicure
+              </h1>
+            </div>
+            <div class="back face">
+              <h1 class="sec3-title">Manicure</h1>
+              <p class="text-muted">All Types Available</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4" id="card-container">
+          <div class="card" id="card">
+            <div class="card-content front face">
+              <img class="img-fluid" src="./images/pedicure.webp" />
+              <h1
+                class="position-absolute bottom-0 text-center fs-4 w-100 my-0 opacity-75"
+                style="
+                  background-color: rgba(255, 255, 255, 0.7);
+                  color: #0e7385;
+                "
+              >
+                Pedicure
+              </h1>
+            </div>
+            <div class="back face">
+              <h1 class="sec3-title">Pedicure</h1>
+              <p class="text-muted">All Types Available</p>
+              <button class="btn btn-sm stretched-link btn-shine text-white">
+                Schedule Your Appointment
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
 
    
     <script>
