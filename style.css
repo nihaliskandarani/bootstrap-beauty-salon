@@ -129,15 +129,15 @@
 
 /* sec3 */
 
-.container3 {
+/* .container3 {
   margin: 10% auto;
   position: relative;
   background: linear-gradient(217deg, rgba(#f29dab, 0.9), rgba(#f29dab, 0) 50%),
     linear-gradient(107deg, rgba(#dd899e, 0.9), rgba(#dd899e, 0) 70%),
     linear-gradient(336deg, rgba(#f2cdc1, 0.9), rgba(#f2cdc1, 0) 60%);
-}
+} */
 
-#card-container {
+/* #card-container {
   position: relative;
   margin: 20px;
   width: 310px;
@@ -156,9 +156,10 @@
   transform-style: preserve-3d;
   transition: all 0.9s linear;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
+   background:  url( ./images/sec333.avif)top/cover;
+} */
 
-#card {
+/* #card {
   &:hover {
     transform: rotateY(180deg);
     box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
@@ -180,9 +181,9 @@
   .back {
     transform: rotateX(-180deg);
   }
-}
+} */
 
-.face {
+/* .face {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -207,5 +208,166 @@
   font-size: 1.2em;
   padding-top: 15px;
   color: #dd899e;
+} */
+@keyframes morph{
+  0%, 100%{border-radius: 50%;}
+
+  25%{
+    border-radius: 30% 70% 70% 30%/30% 70% 30% 70%;
+  }
+
+  50%{
+    border-radius: 70% 30% 30% 70%/70% 30% 70% 30%;
+  }
+
+  75%{
+    border-radius: 50% 50% 30% 50%;
+  }
 }
+
+@keyframes morph2{
+  0%, 100%   {
+    border-radius: 50% 50% 30% 50%;
+  }
+
+  25%{
+ border-radius: 70% 30% 30% 70%/70% 30% 70% 30%;
+  }
+
+  50%{
+    
+       border-radius: 30% 70% 70% 30%/30% 70% 30% 70%;
+  }
+
+  75%  {border-radius: 50%;}
+
+}
+
+
+
+.shape:hover{
+  box-shadow: inset 0 25px 70px rgb(255, 228, 140)!important; transform: scale(1.1);
+  transition: 0.5s ease;
+}
+.shape:hover .shape-btn{
+    background: linear-gradient(135deg, #0006, #0006)!important;
+    transform: translateY(-25px);
+    transition: 0.3s ease;
+    box-shadow:  0 0 5px 2px rgb(250, 193, 93),
+    0 0 5px 3px rgb(255, 228, 140),
+    0 0 20px 5px rgb(255, 219, 41);
+    color:rgb(255, 228, 140) !important;
+}
+.shape:hover .fireflies{opacity: 1 !important;}
+ .container3:hover .ctr3{color: black !important;}
+.shape:hover .shape-text{opacity: 0 !important;}
+
+
+
+
+      .fireflies li{list-style: none;
+border-radius: 50%;
+background-color: rgb(255, 255, 73);
+background-image: 
+radial-gradient(rgb(249, 206, 36) 5%,
+                rgb(254, 179, 4) 25%,
+                rgb(252, 191, 7) 60%);
+box-shadow: 
+    0 0 5px 2px rgb(250, 193, 93),
+    0 0 20px 10px rgb(255, 228, 140),
+    0 0 40px 15px rgb(255, 219, 41);
+height: 5px;
+width: 5px;
+top: -20px;
+position: absolute;
+animation: leftright 24s infinite cubic-bezier(0.39, 0, 0.63, 1),
+updown 8s infinite 1.25s cubic-bezier(0.39, 0, 0.63, 1),
+blinking 3s infinite;}
+
+.fireflies li:nth-of-type(1) {
+  animation-delay: 1s;
+  animation-duration: 65s, 81s, 0.01s;
+  animation-fill-mode: backwards, backwards;
+}
+
+
+
+/* It will create the left right movement */
+@keyframes leftright {
+
+    0%,
+    100% {
+        left: 80%;
+    }
+
+    16.666% {
+        left: 95%;
+    }
+
+    33.333% {
+        left: 10%;
+    }
+
+    50% {
+        left: 60%;
+    }
+
+    66.666% {
+        left: 70%;
+    }
+
+    83.333% {
+        left: 5%;
+    }
+}
+
+/* It will create the up down movement */
+@keyframes updown {
+
+    0%,
+    100% {
+        top: 10px;
+    }
+
+    25% {
+        top: 90%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    75% {
+        top: 95%;
+    }
+}
+
+/* It will create the blinking effect */
+@keyframes blinking {
+    0%,
+    100% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93), 
+                      0 0 10px 5px rgb(255, 242, 63),
+                    0 0 30px 10px rgb(255, 219, 41);
+        height: 0;
+        width: 0;
+    }
+
+    50% {
+        box-shadow: 0 0 5px 2px rgb(250, 193, 93), 
+                      0 0 20px 10px rgb(255, 228, 140),
+                    0 0 40px 15px rgb(255, 219, 41);
+    }
+
+    75% {
+        box-shadow: 0 0 0px 0px rgb(250, 193, 93), 
+                      0 0 0px 0px rgb(255, 228, 140),
+                    0 0 0px 0px rgb(255, 219, 41);
+    }
+}
+
+
+
+
+/* sec4 */
 
