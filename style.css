@@ -750,6 +750,231 @@ textarea[name="Message"]:focus{
 
 
 
+/* cat */
+
+.cat {margin-top: 50px;
+	position: relative;
+	height: 170px;
+	width: 200px;
+}
+
+
+.ear {
+	position: absolute;
+	top: -30%;
+	height: 60%;
+	width: 25%;
+	background: white;
+	
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		bottom: 24%;
+		height: 10%;
+		width: 5%;
+		border-radius: 50%;
+		background: black;
+	}
+	
+	&::after {
+		transform-origin: 50% 100%;
+	}
+}
+
+.ear--left {
+	left: -7%;
+	border-radius: 70% 30% 0% 0% / 100% 100% 0% 0%;
+	transform: rotate(-15deg);
+	
+	&::before,
+	&::after {
+		right: 10%;
+	}
+	
+	&::after {
+		transform: rotate(-45deg);
+	}
+}
+
+.ear--right {
+	right: -7%;
+	border-radius: 30% 70% 0% 0% / 100% 100% 0% 0%;
+	transform: rotate(15deg);
+	
+	&::before,
+	&::after {
+		left: 10%;
+	}
+	
+	&::after {
+		transform: rotate(45deg);
+	}
+}
+
+
+.face {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background: black;
+	border-radius: 50%;
+}
+.face:hover{background:radial-gradient(rgb(243, 55, 112) 35%,
+               
+                rgb(214, 8, 87) 65%);
+box-shadow: 
+    0 0 5px 2px rgb(250, 93, 132),
+    0 0 20px 10px rgb(255, 140, 174),
+    0 0 40px 15px var(--btn-color);}
+    .face:hover .eye-pupil{
+      background-color: rgb(98, 98, 243);
+    }
+
+.eye {
+	position: absolute;
+	top: 35%;
+	height: 30%;
+	width: 31%;
+	background: white;
+	border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+	
+
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 0;
+		width: 100%;
+		border-radius: 0 0 50% 50% / 0 0 40% 40%;
+		background: black;
+		animation: blink 4s infinite ease-in;
+	}
+	
+	@keyframes blink {
+		0% { height: 0; }
+		90% { height: 0; }
+		92.5% { height: 100%; }
+		95% { height: 0; }
+		97.5% { height: 100%; }
+		100% { height: 0; }
+	}
+	
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 60%;
+		height: 10%;
+		width: 15%;
+		background: white;
+		border-radius: 50%;
+	}
+}
+
+.eye--left {
+	left: 0;
+	
+	&::before {
+		right: -5%;
+	}
+}
+
+.eye--right {
+	right: 0;
+	
+	&::before {
+		left: -5%;
+	}
+}
+
+
+.eye-pupil {
+	position: absolute;
+	top: 25%;
+	height: 50%;
+	width: 20%;
+	background: black;
+	border-radius: 50%;
+	animation: look-around 4s infinite;}
+	
+	@keyframes look-around {
+		0% { transform: translate(0) }
+		5% { transform: translate(50%, -25%) }
+		10% { transform: translate(50%, -25%) }
+		15% { transform: translate(-100%, -25%) }
+		20% { transform: translate(-100%, -25%) }
+		25% { transform: translate(0, 0) }
+		100% { transform: translate(0, 0) }
+	}
+	
+	.eye--left & {
+		right: 30%;
+	}
+	
+	.eye--right & {
+		left: 30%;
+	}
+	
+	
+
+
+
+
+.muzzle {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	height: 6%;
+	width: 10%;
+	background: white;
+	transform: translateX(-50%);
+	border-radius: 50% 50% 50% 50% / 30% 30% 70% 70%;
+}
+
+.milo{overflow: hidden;}
+
+.milo-overlay{
+
+  position: absolute;
+  bottom: 0;
+  margin-left: 35px;
+  
+  left: 0px;
+width: 75%;
+  opacity: 0;
+  object-fit: fill;
+margin-bottom: 10px;
+  height: 35%;
+  transform: translateY(60px);
+ }
+
+ .milo:hover .milo-overlay{
+  opacity: 1;
+  transform: translateY(-20px);
+  transition: 0.5s ease;
+ }
+
+ .milo-btn:hover{
+  background-color: #e967a6 !important;
+  transform: scale(1.04);
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
