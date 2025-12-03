@@ -634,3 +634,24 @@ input[type="text"]:focus{
     opacity: 1;
   }
 }
+
+
+
+/*  */
+
+
+
+.page-links:hover{
+  text-decoration: underline!important;
+  text-shadow: 3px 3px 5px var(--btn-color)!important;
+  text-underline-offset: 5px;
+}
+
+/*  */
+
+/* contact */
+textarea[name="Message"]:focus{
+   border-color: var(--btn-color);
+  box-shadow: 0 3px 3px var(--btn-color) inset, 0 0 8px var(--btn-color);
+  outline: 0 none;
+}
